@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <RelativeLayout
+        android:id="@+id/upper_bar"
+        android:background="@color/button5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        
+        <TextView
+            android:layout_margin="5dp"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send Bedroom light command"
+            android:textSize="30sp"
+            android:fontFamily="sans-serif-condensed"
+            />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@+id/upper_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/status_bar"
+                android:layout_below="@+id/upper_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/title"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:layout_margin="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Status Feedback"/>
+                <TextView
+                    android:text="Light 1 : "
+                    android:layout_below="@+id/title"
+                    android:textAlignment="center"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/light1_status"/>
+                <TextView
+                    android:text="Light 2 : "
+                    android:layout_below="@+id/light1_status"
+                    android:textAlignment="center"
+                    android:fontFamily="sans-serif-condensed-medium"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/light2_status"/>
+
+                <TextView
+                    android:text="Light 3 : "
+                    android:layout_below="@+id/light2_status"
+                    android:textAlignment="center"
+                    android:fontFamily="sans-serif-condensed-medium"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/light3_status"/>
+                <TextView
+                    android:text="Light 4 : "
+                    android:layout_below="@+id/light3_status"
+                    android:textAlignment="center"
+                    android:fontFamily="sans-serif-condensed-medium"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/light4_status"/>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/status_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <LinearLayout
+                    android:id="@+id/layout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+                    <Button
+                        android:background="@color/button1"
+                        android:id="@+id/light1_on"
+                        android:text="Light 1 on"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <Button
+                        android:background="@color/button2"
+                        android:id="@+id/light1_off"
+                        android:text="light 1 off"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout2"
+                    android:layout_below="@+id/layout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+                    <Button
+                        android:background="@color/button3"
+                        android:id="@+id/light2_on"
+                        android:text="Light 2 on"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <Button
+                        android:background="@color/button4"
+                        android:id="@+id/light2_off"
+                        android:text="light 2 off"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout3"
+                    android:layout_below="@+id/layout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+                    <Button
+                        android:background="@color/button5"
+                        android:id="@+id/light3_on"
+                        android:text="Light 3 on"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <Button
+                        android:background="@color/button6"
+                        android:id="@+id/light3_off"
+                        android:text="light 3 off"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout4"
+                    android:layout_below="@+id/layout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+                    <Button
+                        android:background="@color/button7"
+                        android:id="@+id/light4_on"
+                        android:text="Light 4 on"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                    <Button
+                        android:background="@color/button8"
+                        android:id="@+id/light4_off"
+                        android:text="light 4 off"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout5"
+                    android:layout_below="@+id/layout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Button
+                        android:background="@color/button9"
+                        android:id="@+id/lights_on"
+                        android:text="All lights on"
+                        android:textColor="@color/white"
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout6"
+                    android:layout_below="@+id/layout5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Button
+                        android:background="@color/button10"
+                        android:id="@+id/lights_off"
+                        android:text="All lights off"
+                        android:textColor="@color/white"
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout7"
+                    android:layout_below="@+id/layout6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <Button
+                        android:background="@color/button11"
+                        android:id="@+id/lights_reset"
+                        android:text="All lights Reset"
+
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+<!--<RelativeLayout-->
+    <!--android:id="@+id/status_bar"-->
+    <!--android:layout_below="@+id/upper_bar"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+    <!--<TextView-->
+        <!--android:id="@+id/title"-->
+        <!--android:textSize="20sp"-->
+        <!--android:textAlignment="center"-->
+        <!--android:fontFamily="sans-serif-condensed-medium"-->
+        <!--android:layout_margin="20dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Status Feedback"/>-->
+    <!--<TextView-->
+        <!--android:layout_below="@+id/title"-->
+        <!--android:textAlignment="center"-->
+        <!--android:fontFamily="sans-serif-condensed-medium"-->
+        <!--android:layout_margin="20dp"-->
+
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/light_status"/>-->
+<!--</RelativeLayout>-->
+    
+
+
+
+
+</RelativeLayout>
